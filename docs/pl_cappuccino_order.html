@@ -1,6 +1,7 @@
 <!--node-js-http-3014を参考にkocmoc-kafeをマージ
  └ node を用いて localhost 上で動作する事を確認
  └ ただし、css がきかないのでローカルホスト上時で動作の仕様かも 21/6/14 -->
+ <!-- branch-0930 googleアナリティクス追加 -->
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -18,6 +19,15 @@
   <link rel="shortcut icon" href="./img/152px.png">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="style_order.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX0H4P1JG8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX0H4P1JG8');
+</script>
 </head>
 
 <body>
