@@ -3,6 +3,7 @@
 <!-- └ kocmoc-u/cosmos_cafe 内に見せるようとして作る = kocmoc_kafeは残し -->
 <!-- cosmos_cafe_menu としてファイル名変更(v.は付けない)-->
 <!-- タブの動作を直す 直す前のファイルは元として保存済み -->
+<!-- branch-0930 アナリティクスのコードを追加 -->
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -18,6 +19,15 @@
   <link rel="shortcut icon" href="./img/152px.png">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DX0H4P1JG8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-DX0H4P1JG8');
+  </script>
 </head>
 
 <body>
