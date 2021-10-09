@@ -1,27 +1,38 @@
 <!--注文確認の表示ページ-->
+<!-- branch-1010 googleアナリティクス変更 = GA4に変更&Gtag追加のため -->
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <title>Thanks</title>
+  <title>THANKS | Cosmos Cafe</title>
 
-    <meta name="description" content="ページの内容の説明を記述する箇所。100文字程度いけます。">
-    <meta name="format-derection" conrent="email=no,telephone=no,adress=no">
-    <link rel="shortcut icon" href="./img/152px.png">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="style_order.css">
+  <meta name="description" content="ページの内容の説明を記述する箇所。100文字程度いけます。">
+  <meta name="format-derection" conrent="email=no,telephone=no,adress=no">
+  <link rel="shortcut icon" href="./img/152px.png">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="style_order.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QJF6FPS7YV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QJF6FPS7YV');
+  </script>
 </head>
 
 <body>
   <main class="rod">
     <h1 class="text1">THANK YOU ORDER!</h1>
     <div class="text-center">
-        <p>ご注文ありがとうございます<br>念のため口頭での確認もお願いいたします</p>
-        <a href="index.html">トップページへ</a>
-      </div>
+      <p>ご注文ありがとうございます<br>念のため口頭での確認もお願いいたします</p>
+      <a href="index.html">トップページへ</a>
+    </div>
   </main>
 
 
@@ -45,10 +56,11 @@
 
 
   <!-- IE Edge でレスポンシブに対応させる .js -->
-    <script src="js/ofi.js"></script>
-    <script>
-      objectFitImages();
-    </script>
+  <script src="js/ofi.js"></script>
+  <script>
+    objectFitImages();
+  </script>
 
 </body>
+
 </html>
