@@ -4,6 +4,8 @@
 <!-- cosmos_cafe_menu としてファイル名変更(v.は付けない)-->
 <!-- タブの動作を直す 直す前のファイルは元として保存済み -->
 <!-- branch-0930 アナリティクスのコードを追加 -->
+<!-- branch-1010 googleアナリティクス変更 = GA4に変更&Gtag追加のため -->
+<!-- <title> および order[].html ファイル名変更 = 利便性とGA4対策 -->
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -12,7 +14,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>cosmos-cafe-menu-coffee</title>
+  <title>MENU COFFEE | Cosmos Cafe</title>
 
   <meta name="description" content="ページの内容の説明を記述する箇所。100文字程度いけます。">
   <meta name="format-derection" conrent="email=no,telephone=no,adress=no">
@@ -20,15 +22,14 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="style.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DX0H4P1JG8"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QJF6FPS7YV"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'G-DX0H4P1JG8');
+    gtag('config', 'G-QJF6FPS7YV');
   </script>
-</head>
 
 <body>
   <div class="tabs">
@@ -65,9 +66,9 @@
                   <!-- ポップアップの中身＆コメント -->
                   <img src="./img/coffer_poland.png" alt="" class="layer-img">
                   <div class="pop_area">
-                    <a href="./pl_americano_order.html" class="text1 button">AMERICANO</a>
+                    <a href="./order_pl_americano.html" class="text1 button">AMERICANO</a>
                     <P class="text1 or_rod">OR</P>
-                    <a href="./pl_cappuccino_order.html" class="text1 button">CAPPUCCINO</a>
+                    <a href="./order_pl_cappuccino.html" class="text1 button">CAPPUCCINO</a>
                   </div>
                 </div>
                 <!-- ポップアップの中身 ここまで -->

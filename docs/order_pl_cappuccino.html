@@ -1,8 +1,9 @@
 <!--node-js-http-3014を参考にkocmoc-kafeをマージ
  └ node を用いて localhost 上で動作する事を確認
  └ ただし、css がきかないのでローカルホスト上時で動作の仕様かも 21/6/14 -->
-<!-- branch-0930 googleアナリティクス追加 -->
- <!DOCTYPE html>
+ <!-- branch-0930 googleアナリティクス追加 -->
+ <!-- branch-1010 googleアナリティクス変更 = GA4に変更&Gtag追加のため -->
+<!DOCTYPE html>
 <html lang="ja">
 
 <head>
@@ -12,21 +13,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>Order-PL-Americano</title>
+  <title>ORDER PL CAPPUCCINO | Cosmos Cafe</title>
 
   <meta name="description" content="ページの内容の説明を記述する箇所。100文字程度いけます。">
   <meta name="format-derection" conrent="email=no,telephone=no,adress=no">
   <link rel="shortcut icon" href="./img/152px.png">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="style_order.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX0H4P1JG8"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJF6FPS7YV"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-DX0H4P1JG8');
+  gtag('config', 'G-QJF6FPS7YV');
 </script>
 </head>
 
@@ -34,7 +35,7 @@
   <!--ここからオーダーフォーム追加-->
   <main class="rod">
     <div class="orderTop">
-      <div class="text1 button">AMERICANO</div>
+      <div class="text1 button">CAPPUCCINO</div>
     </div>
     <!--↓ method="post" を追加＝授業より-->
     <!-- nameタグにオーダーの名前をつけておけば、ひとつの index.js で対応可能-->
@@ -44,6 +45,7 @@
         <tr>
           <td><label for="pl_cap">NAME</label></td>
           <td><input type="text" name="pl_americano" placeholder="USER NAME"></td>
+        </tr>
         <tr>
           <td>HOT OR ICED?</td>
           <td>
@@ -51,19 +53,11 @@
             <input type="radio" name="hotOrIced" id="iced" value="iced"><label for="iced">ICED</label>
           </td>
         </tr>
-        </tr>
         <tr>
           <td>WITH SUGAR?</td>
           <td>
             <input type="radio" name="sugar" id="yes-sugar" value="yes-sugar"><label for="yes-sugar">YES</label>
             <input type="radio" name="sugar" id="no-sugar" value="no-sugar"><label for="no-sugar">NO</label>
-          </td>
-        </tr>
-        <tr>
-          <td>WITH MILK?</td>
-          <td>
-            <input type="radio" name="milk" id="yes-milk" value="yes-milk"><label for="yes-milk">YES</label>
-            <input type="radio" name="milk" id="no-milk" value="no-milk"><label for="no-milk">NO</label>
           </td>
         </tr>
       </table>

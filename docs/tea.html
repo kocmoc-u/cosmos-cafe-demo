@@ -4,7 +4,7 @@
 <!-- cosmos_cafe_menu としてファイル名変更(v.は付けない)-->
 <!-- タブの動作を直す 直す前のファイルは元として保存済み -->
 <!-- タブが生きない(popupのhrefが駄目？！)なので各タブを別ページで -->
-
+<!-- branch-1010 googleアナリティクス変更 = GA4に変更&Gtag追加のため -->
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -13,13 +13,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>cosmos-cafe-menu-tea</title>
+  <title>MENU TEA | Cosmos Cafe</title>
 
   <meta name="description" content="ページの内容の説明を記述する箇所。100文字程度いけます。">
   <meta name="format-derection" conrent="email=no,telephone=no,adress=no">
   <link rel="shortcut icon" href="./img/152px.png">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QJF6FPS7YV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QJF6FPS7YV');
+  </script>
 </head>
 
 <body>
@@ -36,72 +45,72 @@
 
 
 
-  <!-- tea タブ -->
-  <div class="tab_content" id="tea_content">
-    <div class="tab_content_description">
-      <!-- イメージの読み込み -->
-      <div class="header">
-        <div class="topimage_tea"></div>
-      </div>
-      <!-- メインの大枠 -->
-      <div class="main">
+    <!-- tea タブ -->
+    <div class="tab_content" id="tea_content">
+      <div class="tab_content_description">
+        <!-- イメージの読み込み -->
+        <div class="header">
+          <div class="topimage_tea"></div>
+        </div>
+        <!-- メインの大枠 -->
+        <div class="main">
 
-        <!-- 小窓 1 ポーランド-->
-        <div class="komado">
-          <div class="pop-box">
-            <label for="popup-on9">
-              <div class="btn-open"><img src="./img/01.png"></div>
-            </label>
-            <input type="checkbox" id="popup-on9">
-            <div class="popup">
-              <label for="popup-on9" class="icon-close">×</label>
-              <div class="popup-content">
-                <!-- ポップアップの中身＆コメント -->
-                <img src="./img/01.png" alt="" class="layer-img">
-                <p class="text1">
-                  ********<br>
-                  <span class="soushoku">OR</span><br>
-                  ********
-                </p>
-                <!-- ポップアップの中身 ここまで -->
+          <!-- 小窓 1 ポーランド-->
+          <div class="komado">
+            <div class="pop-box">
+              <label for="popup-on9">
+                <div class="btn-open"><img src="./img/01.png"></div>
+              </label>
+              <input type="checkbox" id="popup-on9">
+              <div class="popup">
+                <label for="popup-on9" class="icon-close">×</label>
+                <div class="popup-content">
+                  <!-- ポップアップの中身＆コメント -->
+                  <img src="./img/01.png" alt="" class="layer-img">
+                  <p class="text1">
+                    ********<br>
+                    <span class="soushoku">OR</span><br>
+                    ********
+                  </p>
+                  <!-- ポップアップの中身 ここまで -->
+                </div>
               </div>
+              <!-- 説明文 -->
+              <p class="text0">
+                一行目 調整中 <br>
+                二行目 調整中 <br>
+                三行目 調整中
+              </p>
             </div>
-            <!-- 説明文 -->
-            <p class="text0">
-              一行目 調整中 <br>
-              二行目 調整中 <br>
-              三行目 調整中
-            </p>
           </div>
+
+
         </div>
 
-
-      </div>
-
-      <div class="footer">
-        <p class="text2 text_footer2">
-          <br>
-          COSMOS CAFE<br>
-          INSTAGRAM : <a href="https://www.instagram.com/kocmoc_kafe/" target="_blank">KOCMOC_CAFE</a><br>
-        </p>
+        <div class="footer">
+          <p class="text2 text_footer2">
+            <br>
+            COSMOS CAFE<br>
+            INSTAGRAM : <a href="https://www.instagram.com/kocmoc_kafe/" target="_blank">KOCMOC_CAFE</a><br>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- ↑ tea タブ ここで終わり -->
+    <!-- ↑ tea タブ ここで終わり -->
 
 
 
-  <!--        <div class="tab_content" id="programming_content">
+    <!--        <div class="tab_content" id="programming_content">
     <div class="tab_content_description">
       <p class="c-txtsp">　РЕМОНТ</p>
     </div>
   </div>
 -->
-  <div class="tab_content" id="design_content">
-    <div class="tab_content_description">
-      <p class="c-txtsp">　РЕМОНТ</p>
+    <div class="tab_content" id="design_content">
+      <div class="tab_content_description">
+        <p class="c-txtsp">　РЕМОНТ</p>
+      </div>
     </div>
-  </div>
 
 
   </div>
