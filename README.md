@@ -8,3 +8,11 @@
 5. GTM用タグを追加
 6. グローバルサイト用タグを追加
 7. グローバルサイト用タグ修正（書き方のせいかトラッキングできないので
+# branch-1023
+9. index.html → coffee に変更
+10. GSC用の設定（google検索でヒットさせるための手続き）
+└ sitemap.xmlの配置
+└ Search Console からダウソの googlexxxx.html を配置
+└ _console.yml を配置
+└ 参考ページは以下
+ https://r17n.page/2019/10/25/github-pages-from-docs-generation-sitemap/
