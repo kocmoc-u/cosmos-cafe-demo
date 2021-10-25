@@ -16,3 +16,6 @@
 └ _console.yml を配置
 └ 参考ページは以下
  https://r17n.page/2019/10/25/github-pages-from-docs-generation-sitemap/
+# branch-1024
+11. 各htmlページのリンクを修正
+└ index.html → coffee.html
